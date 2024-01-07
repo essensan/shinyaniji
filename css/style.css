@@ -117,6 +117,7 @@ body {
 
 .works-summary .works-text{
   margin-top: 20px;
+  font-size: 14px;
 }
 
 .summary-left img{
@@ -141,6 +142,7 @@ body {
 
 .works-op .op-text {
   margin-top: 16px;
+  font-size: 14px;
 }
 
 .article-back .works-subtitle{
@@ -181,6 +183,7 @@ body {
 .article-eratta p {
   margin-left: 3rem;
   text-indent: -1rem;
+  font-size: 14px;
 }
 
 .eratta-title{
@@ -197,7 +200,7 @@ body {
 }
 
 .article-eratta h4{
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 /* contact-------------------------------------------------------------------- */

@@ -93,8 +93,7 @@ header {
   text-align: center;
   background-color: white;
   box-sizing:border-box;
-	border: 20px solid #081826;
-  border-top: none;
+	border-bottom: 20px solid #081826;
 }
 
 .circle-logo{
