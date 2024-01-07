@@ -260,6 +260,13 @@
 /* works-------------------------------------------------------------------- */
 
 @media screen and (max-width: 1000px) {
+  .summary-left img{
+    max-height: 300px;
+    
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .article-back .banner {
     grid-template-columns: 250px 250px;
   }
@@ -269,8 +276,9 @@
     display: initial;
   }
 
-  .summary-left {
+  .works-summary .summary-left{
     padding: 0% 5% 0% 5%;
+    box-shadow: none;
   }
 
   .summary-right {
