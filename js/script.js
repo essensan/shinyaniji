@@ -2,14 +2,14 @@
 $(window).bind("unload", function () { });
 
 //headerの挿入
-$(function () {
-    $('#header').load('include/header.html');
-});
+// $(function () {
+//     $('#header').load('include/header.html');
+// });
 
 //footerの挿入
-$(function () {
-    $('#footer').load('include/footer.html');
-});
+// $(function () {
+//     $('#footer').load('include/footer.html');
+// });
 
 //indexのカーソル透過処理
 $('.nav-list-item').hover(
