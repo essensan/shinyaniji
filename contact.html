@@ -26,14 +26,20 @@
     <script type="text/javascript">
         let submitted = false;
     </script>
-    <iframe
-        name="hidden_iframe"
-        id="hidden_iframe"
-        style="display: none"
-        onload="if(submitted){window.location='contact-complete.html';}"
-    ></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='contact-complete.html';}"></iframe>
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZQG6WCRQK"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WZQG6WCRQK');
+</script>
 
 <header>
 
@@ -58,9 +64,10 @@
     <a href="index.html"><img class="circle-logo" src="img/circle-logo.png" alt="サークルロゴ"></a>
     <p class="headline">深夜二時のドワーフ/shinya niji no dwarf</p>
     <p class="header-text">オリジナルの同人ボードゲームを制作しています。<br class="br-sp"> なんやかんやでいつもエルフの森が燃える。</br>
-        <br class="br-sp">普段は即売会のみの活動。<br class="br-sp">在庫の通販（BOOTH）はページ下部からどうぞ。</p>
+        <br class="br-sp">普段は即売会のみの活動。<br class="br-sp">在庫の通販（BOOTH）はページ下部からどうぞ。
+    </p>
 
-    
+
     <ul class="nav-list">
         <li>
             <a href="index.html" class="nav-list-item Top">Top</a>
@@ -78,11 +85,27 @@
 </header>
 
 <!-- ナビのカレントページ色変更 -->
-<style>.nav-list-item{color: black;}</style>
-<style>.nav-list .Contact{color: indianred;}</style>
+<style>
+    .nav-list-item {
+        color: black;
+    }
+</style>
+<style>
+    .nav-list .Contact {
+        color: indianred;
+    }
+</style>
 
-<style>.nav_list{color: white;}</style>
-<style>.nav_list .Contact{color: #EBAB65;}</style>
+<style>
+    .nav_list {
+        color: white;
+    }
+</style>
+<style>
+    .nav_list .Contact {
+        color: #EBAB65;
+    }
+</style>
 
 <body>
     <div class="article-back">
@@ -91,41 +114,24 @@
         <p class="contact-text">ご感想、お問い合わせは下記フォーム、もしくはXのダイレクトメッセージよりお願いします。</p>
 
         <form class="Form"
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjkvBPjnXPVMZ7xKcS5fn1orJS99w9vw-pnXfxX3VnTa5lew/formResponse"
-        method="POST"
-        target="hidden_iframe"
-        onsubmit="submitted=true;"
-        >
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjkvBPjnXPVMZ7xKcS5fn1orJS99w9vw-pnXfxX3VnTa5lew/formResponse"
+            method="POST" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="Form-Item">
                 <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前（H.N可）</p>
-                <input 
-                name="entry.762892323"
-                type="text" 
-                class="Form-Item-Input"
-                id="field-name"
-                placeholder="お名前"
-                required="required">
+                <input name="entry.762892323" type="text" class="Form-Item-Input" id="field-name" placeholder="お名前"
+                    required="required">
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-                <input
-                name="entry.1686660766"
-                type="email" 
-                class="Form-Item-Input"
-                id="field-mail"
-                placeholder="sample@gmail.com"
-                required="required">
+                <input name="entry.1686660766" type="email" class="Form-Item-Input" id="field-mail"
+                    placeholder="sample@gmail.com" required="required">
             </div>
             <div class="Form-Item">
                 <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>メッセージを入力</p>
-                <textarea 
-                name="entry.1080740569"
-                class="Form-Item-Textarea"
-                id="field-message"
-                ></textarea>
+                <textarea name="entry.1080740569" class="Form-Item-Textarea" id="field-message"></textarea>
             </div>
             <button type="submit" class="Form-Btn">送信する</button>
-        </div>
+    </div>
     </form>
 
     <div id="js-pagetop">
@@ -143,12 +149,13 @@
     </div>
 
     <a href="https://twitter.com/dwarf0200" target="_blank"><img class="x-icon" src="ico/x-banner.svg" alt="X"></a>
-    <a href="https://shinyaniji.booth.pm/" target="_blank"><img class="booth-icon" src="https://asset.booth.pm/static-images/banner/200x40_02.png"></a>
+    <a href="https://shinyaniji.booth.pm/" target="_blank"><img class="booth-icon"
+            src="https://asset.booth.pm/static-images/banner/200x40_02.png"></a>
 
     <p class="copyright">©shinya niji no dwarf</p>
     <br>
     <br>
-    
+
 
 </footer>
 
