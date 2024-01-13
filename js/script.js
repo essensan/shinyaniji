@@ -145,13 +145,3 @@ $(document).ready(function () {
         });
     });
 });
-
-$(document).ready(function () {
-    $('.fadein-0').each(function () {
-        var position = $(this).offset().top;
-        var windowHeight = $(window).height();
-        if (position < windowHeight) {
-            $(this).addClass('active');
-        }
-    });
-});
