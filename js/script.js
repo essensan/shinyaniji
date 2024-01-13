@@ -122,7 +122,18 @@ $('#js-pagetop').hover(
 
 
 // fadeinアニメーション用
-$(function () {
+$(document).ready(function () {
+    // 初期表示時にも要素が表示されているかどうかを判定
+    $('.fadein').each(function () {
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > position - windowHeight + 100) {
+            $(this).addClass('active');
+        }
+    });
+
+    // スクロールイベント
     $(window).scroll(function () {
         $('.fadein').each(function () {
             var position = $(this).offset().top;
