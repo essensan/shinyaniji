@@ -145,3 +145,17 @@ $(document).ready(function () {
         });
     });
 });
+
+// メッセージ欄の日本語入力判定（スパム対策）
+document.querySelector('.Form').addEventListener('submit', function(event) {
+    const message = document.getElementById('field-message').value;
+    
+    // 日本語の正規表現パターンを使用して日本語文字が含まれているかチェック
+    const japaneseRegex = /[ぁ-んァ-ン一-龥々〆〤]/;
+    
+    if (!japaneseRegex.test(message)) {
+        // 日本語が含まれていない場合、送信をキャンセルし、アラートを表示
+        event.preventDefault();
+        alert('This form only supports Japanese');
+    }
+});
